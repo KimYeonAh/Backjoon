@@ -17,6 +17,7 @@ queue.append([0, 0])
 def bfs() :
     x, y = queue.popleft()
     visited[x][y] = 1
+    
     for i in range(4) :
         nx = x + dx[i]
         ny = y + dy[i]
