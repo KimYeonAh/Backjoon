@@ -14,6 +14,7 @@ dy = [0, 0, 1, -1]
 def bfs() :
     x, y = que.popleft()
     visited[x][y] = 1
+    
     for i in range(4) :
         nx = x + dx[i]
         ny = y + dy[i]
