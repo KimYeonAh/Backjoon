@@ -1,5 +1,5 @@
 import sys
-sys.setrecursionlimit(10000)
+sys.setrecursionlimit(10000) #최대 재귀 깊이 설정 (RecursionError를 해결하기 위해 추가하였음)
 
 T = int(input())
 countList = []
