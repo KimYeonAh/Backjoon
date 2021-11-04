@@ -7,7 +7,6 @@ countList = []
 def dfs(x, y) :
     visited[x][y] = 1
     global count
-
     for i in range(4) :
         nx = x + dx[i]
         ny = y + dy[i]
