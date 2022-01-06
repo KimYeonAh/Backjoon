@@ -1,9 +1,7 @@
 N, M = map(int, input().split())
 
 def all_permutations() :
-    for i in range(N) :
-        visit = [False] * N
-    
+    visit = [False] * N
     DFS_permutation([], 0, visit)
 
 def DFS_permutation(sol, level, visit) :
