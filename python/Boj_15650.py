@@ -6,9 +6,6 @@ def all_permutations() :
 
 def DFS_permutation(num, sol, level, visit) :
     if level == M :
-        if num != sol[0] :
-            num = sol[0]
-
         for i in range(M) :
             print(sol[i], end= ' ')
         print()
@@ -18,7 +15,7 @@ def DFS_permutation(num, sol, level, visit) :
         if not visit[i] :
             sol.append(i+1)
             visit[i] = True
-            DFS_permutation(num+1, sol, level+1, visit)
+            DFS_permutation(i+1, sol, level+1, visit)   
             visit[i] = False
             sol.pop()
 
